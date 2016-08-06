@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Git Served",
+  "description": "This extension will add chat to GitHub repos",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ]
+}

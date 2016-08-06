@@ -1,0 +1,5 @@
+Get file contents: 
+curl -i "https://api.github.com/repos/<owner>/<repo>/contents/<path>"
+ 
+Edit file contents:
+ curl --user username:password -X PUT --data '{"message":"curl commit", "content":<base64 encoded content>, "sha":<sha for file(included in get)>}' -i "https://api.github.com/repos/<owner>/<repo>/contents/<path>"
