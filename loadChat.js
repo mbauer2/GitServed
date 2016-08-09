@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var sendMessage = document.getElementById('sendMessage');
-  sendMessage.addEventListener('click', function() {
 	$.ajax({
 		type: "GET",
 		url: "https://api.github.com/repos/mbauer2/rayTracer/contents/README.md",
@@ -12,7 +10,4 @@ document.addEventListener('DOMContentLoaded', function() {
 			chatText.innerHTML = cont;
 		}
 	});
-	
-
-  }, false);
 }, false);
