@@ -1,5 +1,24 @@
 Get file contents: 
 curl -i "https://api.github.com/repos/<owner>/<repo>/contents/<path>"
  
+ {
+  "name": "README.md",
+  "path": "README.md",
+  "sha": "07d49f909d0b7db370a3a5476c369fd40d0d1dba",
+  "size": 63,
+  "url": "https://api.github.com/repos/mbauer2/raytracer/contents/README.md?ref=master",
+  "html_url": "https://github.com/mbauer2/raytracer/blob/master/README.md",
+  "git_url": "https://api.github.com/repos/mbauer2/raytracer/git/blobs/07d49f909d0b7db370a3a5476c369fd40d0d1dba",
+  "download_url": "https://raw.githubusercontent.com/mbauer2/raytracer/master/README.md",
+  "type": "file",
+  "content": "IyByYXl0cmFjZXINClJheSB0cmFjZXIgd3JpdHRlbiBpbiBDKysNCg0KY3Vy\nbGVkaXQNCg0KY3VybGVkaXQy\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/mbauer2/raytracer/contents/README.md?ref=master",
+    "git": "https://api.github.com/repos/mbauer2/raytracer/git/blobs/07d49f909d0b7db370a3a5476c369fd40d0d1dba",
+    "html": "https://github.com/mbauer2/raytracer/blob/master/README.md"
+  }
+}
+ 
 Edit file contents:
  curl --user username:password -X PUT --data '{"message":"curl commit", "content":<base64 encoded content>, "sha":<sha for file(included in get)>}' -i "https://api.github.com/repos/<owner>/<repo>/contents/<path>"
