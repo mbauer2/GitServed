@@ -11,12 +11,5 @@
   },
   "permissions": [
    "activeTab"
-   ],
-  "content_scripts": 
-    [
-        {
-            "matches":["http://*/*", "https://*/*"],
-            "js":["jquery.3.1.0.min.js", "popup.js"]
-        }
-    ]
+   ]
 }
