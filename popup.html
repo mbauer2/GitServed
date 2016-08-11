@@ -6,9 +6,17 @@
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1>GitHub Chat</h1>
+    <h1>Git Served</h1>
+	<form id="userInfo">
+	  Username:<input id="username" type="text" name="newUser">
+	  Password:<input id="pass" type="password" name="newPass">
+	</form>
+	<button id="saveInfo">Login</button>
+	<form id="repoInfo">
+	  Owner:<input id="owner" type="text" name="newOwner">
+	  Repo:<input id="repo" type="text" name="newRepo">
+	</form>
 	<p id="chatText"></p>
-	<script src="loadChat.js"></script>
 	<form id="userInput">
 	  <input id="messageInput" type="text" name="newMessage">
 	</form>
